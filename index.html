@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV. KRESNA JAYA FORKLIFT - Pelatihan Sertifikasi & Sewa Alat Berat #1 Indonesia</title>
+    <meta name="description" content="Pelatihan Forklift Manual/Matic, Reach Truck, Excavator Bersertifikat Kemnaker. Sewa Harian/Mingguan/Tahunan. Service 24/7. Hub: 081-232-336-726">
+    <meta name="keywords" content="pelatihan forklift, sewa alat berat, reach truck, excavator, sertifikasi Kemnaker, forklift Mojokerto">
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #1e3c72;
+            --primary-dark: #2a5298;
+            --secondary: #ffd700;
+            --success: #25D366;
+            --danger: #dc3545;
+            --light: #f8f9fa;
+            --dark: #333;
+            --white: #fff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            overflow-x: hidden;
+        }
+
+        /* SCROLLBAR CUSTOM */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 10px;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: var(--white);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            backdrop-filter: blur(10px);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--secondary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: var(--secondary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+
+        .hamburger span {
+            width: 28px;
+            height: 3px;
+            background: var(--white);
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(135deg, rgba(30,60,114,0.95), rgba(42,82,152,0.95)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><rect fill="%231e3c72" width="1920" height="1080"/><circle fill="%23ffd700" opacity="0.1" cx="300" cy="300" r="200"/><circle fill="%232a5298" opacity="0.2" cx="1600" cy="400" r="250"/><path fill="%23ffd700" opacity="0.05" d="M0 700Q400 500 800 700T1600 700V1080H0z"/></svg>');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="0.5" fill="white" opacity="0.05"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            pointer-events: none;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 0 2rem;
+            z-index: 2;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1.2rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-primary {
+            background: linear-gradient(45deg, var(--secondary), #ffed4a);
+            color: var(--primary);
+            box-shadow: 0 10px 30px rgba(255,215,0,0.4);
+        }
+
+        .cta-primary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(255,215,0,0.6);
+            background: linear-gradient(45deg, #ffed4a, var(--secondary));
+        }
+
+        .cta-secondary {
+            background: transparent;
+            color: var(--white);
+            border-color: var(--white);
+        }
+
+        .cta-secondary:hover {
+            background: var(--white);
+            color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 6rem 0;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            margin-bottom: 4rem;
+            color: var(--primary);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(45deg, var(--secondary), #ffed4a);
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        /* TRAINING SECTION */
+        .training-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .training-card {
+            background: var(--white);
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .training-card:hover {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 30px 80px rgba(0,0,0,0.2);
+        }
+
+        .training-header {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--white);
+            padding: 2.5rem 2rem;
+            text-align: center;
+        }
+
+        .training-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .training-header h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .training-body {
+            padding: 2.5rem 2rem;
+        }
+
+        .training-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .training-features li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+            color: #28a745;
+        }
+
+        .price-badge {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--secondary);
+            margin: 1.5rem 0;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .whatsapp-btn {
+            background: linear-gradient(45deg, var(--success), #20ba5a);
+            color: var(--white);
+            border: none;
+            padding: 1.2rem 2rem;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            width: 100%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            box-shadow: 0 10px 30px rgba(37,211,102,0.4);
+        }
+
+        .whatsapp-btn:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 15px 40px rgba(37,211,102,0.6);
+        }
+
+        /* SERVICES */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 3rem 2.5rem;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: all 0.4s ease;
+            border-top: 5px solid var(--secondary);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--secondary), transparent);
+        }
+
+        .service-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 30px 80px rgba(0,0,0,0.15);
+        }
+
+        .service-icon {
+            font-size: 4rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .service-card h3 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        /* STATS */
+        .stats-section {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--white);
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 3rem;
+        }
+
+        .stat-item h3 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 800;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        /* CONTACT */
+        .contact-section {
+            background: var(--light);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact-info h3 {
+            color: var(--primary);
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-info a {
+            color: var(--success);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .contact-form {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .form-success {
+            background: linear-gradient(45deg, #d4edda, #c3e6cb);
+            color: #155724;
+            padding: 1.5rem;
+            border-radius: 16px;
+            border: 1px solid #c3e6cb;
+            margin-bottom: 2rem;
+            display: none;
+            animation: slideIn 0.5s ease;
+        }
+
+        .form-group {
+            margin-bottom: 1.75rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--primary);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 1.2rem 1.5rem;
+            border: 2px solid #e9ecef;
+            border-radius: 16px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: #fafbfc;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: var(--white);
+            box-shadow: 0 0 0 3px rgba(30,60,114,0.1);
+        }
+
+        /* FOOTER */
+        footer {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* ANIMATIONS */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .animate {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease;
+        }
+
+        .animate.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 1024px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-links {
+                position: fixed;
+                left: -100%;
+                top: 80px;
+                flex-direction: column;
+                background: rgba(30,60,114,0.98);
+                width: 100%;
+                text-align: center;
+                padding: 3rem 0;
+                gap: 2rem;
+                transition: left 0.3s ease;
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            section {
+                padding: 4rem 0;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <a href="#home" class="logo">
+                <i class="fas fa-truck-monster"></i>
+               CV. KRESNA JAYA FORKLIFT
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#pelatihan">Pelatihan</a></li>
+                <li><a href="#sewa">Sewa Alat</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+                <li><a href="#testimoni">Testimoni</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-content animate">
+            <h1>🏗️ Partner Alat Berat #1 Indonesia</h1>
+            <p>
+                <strong>Pelatihan Forklift, Reach Truck, Excavator</strong> 
+                Bersertifikat Kemnaker RI • Sewa Harian/Mingguan/Tahunan • 
+                Service 24/7 dengan Tim Expert
+            </p>
+            <div class="cta-buttons">
+                <a href="#pelatihan" class="cta-button cta-primary">
+                    <i class="fas fa-graduation-cap"></i>
+                    Mulai Pelatihan
+                </a>
+                <a href="#kontak" class="cta-button cta-secondary">
+                    <i class="fab fa-whatsapp"></i>
+                    Chat WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PELATIHAN -->
+    <section id="pelatihan">
+        <div class="container">
+            <h2 class="section-title animate">
+                <i class="fas fa-certificate"></i> Pelatihan Alat Berat Bersertifikat Kemnaker RI
+            </h2>
+            <div class="training-grid">
+                <!-- FORKLIFT MANUAL -->
+                <div class="training-card animate">
+                    <div class="training-header">
+                        <div class="training-icon">
+                            <i class="fas fa-truck-loading"></i>
+                        </div>
+                        <h3>Forklift Manual</h3>
+                    </div>
+                    <div class="training-body">
+                        <ul class="training-features">
+                            <li><i class="fas fa-check-circle"></i> SIO K3 Forklift Kemnaker RI</li>
+                            <li><i class="fas fa-check-circle"></i> Modul Pembelajaran</li>
+                            <li><i class="fas fa-check-circle"></i> Praktek Lapangan</li>
+                            <li><i class="fas fa-check-circle"></i> Surat Keterangan Pelatihan</li>
+                        </ul>
+                        <div class="price-badge">Rp 6.500.000</div>
+                        <a href="https://wa.me/6281232336726?text=Halo%20Admin%20Kresna%20Jaya%0A%0ASaya%20minat%20Pelatihan%20FORKLIFT%20MANUAL%0ATerima%20kasih!" 
+                           class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Daftar Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- FORKLIFT MATIC -->
+                <div class="training-card animate">
+                    <div class="training-header">
+                        <div class="training-icon">
+                            <i class="fas fa-truck-loading"></i>
+                        </div>
+                        <h3>Forklift Matic</h3>
+                    </div>
+                    <div class="training-body">
+                        <ul class="training-features">
+                            <li><i class="fas fa-check-circle"></i> SIO K3 Forklift Kemnaker RI</li>
+                            <li><i class="fas fa-check-circle"></i> Modul Pembelajaran</li>
+                            <li><i class="fas fa-check-circle"></i> Praktek Lapangan</li>
+                            <li><i class="fas fa-check-circle"></i> Surat Keterangan Pelatihan</li>
+                        </ul>
+                        <div class="price-badge">Rp 6.500.000</div>
+                        <a href="https://wa.me/6281232336726?text=Halo%20Admin%20Kresna%20Jaya%0A%0ASaya%20minat%20Pelatihan%20FORKLIFT%20MATIC%0ATerima%20kasih!" 
+                           class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Daftar Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- REACH TRUCK -->
+                <div class="training-card animate">
+                    <div class="training-header">
+                        <div class="training-icon">
+                            <i class="fas fa-pallet"></i>
+                        </div>
+                        <h3>Reach Truck</h3>
+                    </div>
+                    <div class="training-body">
+                        <ul class="training-features">
+                            <li><i class="fas fa-check-circle"></i> SIO K3 Reach Truck Kemnaker RI</li>
+                            <li><i class="fas fa-check-circle"></i> Modul Pembelajaran</li>
+                            <li><i class="fas fa-check-circle"></i> Praktek Lapangan</li>
+                            <li><i class="fas fa-check-circle"></i> Surat Keterangan Pelatihan</li>
+                        </ul>
+                        <div class="price-badge">Rp 6.500.000</div>
+                        <a href="https://wa.me/6281232336726?text=Halo%20Admin%20Kresna%20Jaya%0A%0ASaya%20minat%20Pelatihan%20REACH%20TRUCK%0ATerima%20kasih!" 
+                           class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Daftar Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- EXCAVATOR -->
+                <div class="training-card animate">
+                    <div class="training-header">
+                        <div class="training-icon">
+                            <i class="fas fa-tractor"></i>
+                        </div>
+                        <h3>Excavator</h3>
+                    </div>
+                    <div class="training-body">
+                        <ul class="training-features">
+                            <li><i class="fas fa-check-circle"></i> SIO K3 Excavator Kemnaker RI</li>
+                            <li><i class="fas fa-check-circle"></i> Modul Pembelajaran</li>
+                            <li><i class="fas fa-check-circle"></i> Praktek Lapangan</li>
+                            <li><i class="fas fa-check-circle"></i> Surat Keterangan Pelatihan</li>
+                        </ul>
+                        <div class="price-badge">Rp 10.000.000</div>
+                        <a href="https://wa.me/6281232336726?text=Halo%20Admin%20Kresna%20Jaya%0A%0ASaya%20minat%20Pelatihan%20EXCAVATOR%0ATerima%20kasih!" 
+                           class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Daftar Sekarang
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEWA & SERVICE -->
+    <section id="sewa" style="background: var(--light);">
+        <div class="container">
+            <h2 class="section-title animate">
+                <i class="fas fa-tools"></i> Layanan Lengkap Kami
+            </h2>
+            <div class="services-grid">
+                <div class="service-card animate">
+                    <i class="fas fa-calendar-day service-icon"></i>
+                    <h3>Sewa Harian</h3>
+                    <p></strong> Unit Lengkap + operator berpengalaman. Siap pakai untuk proyek darurat.</p>
+                    <a href="https://wa.me/6281232336726?text=Halo%20Admin%0A%0ASaya%20minat%20SEWA%20HARIAN%0AUnit%20apa%20saja%20Terima%20kasih!" 
+                       class="whatsapp-btn" style="background: linear-gradient(45deg, #007bff, #0056b3); margin-top: 1.5rem;">
+                        <i class="fab fa-whatsapp"></i> Sewa Harian
+                    </a>
+                </div>
+
+                <div class="service-card animate">
+                    <i class="fas fa-calendar-week service-icon"></i>
+                    <h3>Sewa Mingguan</h3>
+                    <p></strong> Unit + operator berpengalaman. Siap pakai untuk proyek darurat. menengah.</p>
+                    <a href="https://wa.me/6281232336726?text=Halo%20Admin%0A%0ASaya%20minat%20SEWA%20MINGGUAN%0ATerima%20kasih!" 
+                       class="whatsapp-btn" style="background: linear-gradient(45deg, #007bff, #0056b3); margin-top: 1.5rem;">
+                        <i class="fab fa-whatsapp"></i> Sewa Mingguan
+                    </a>
+                </div>
+
+                <div class="service-card animate">
+                    <i class="fas fa-calendar-alt service-icon"></i>
+                    <h3>Sewa Tahunan</h3>
+                    <p></strong> Solusi hemat jangka panjang untuk perusahaan.</p>
+                    <a href="https://wa.me/6281232336726?text=Halo%20Admin%0A%0ASaya%20minat%20SEWA%20TAHUNAN%0ATerima%20kasih!" 
+                       class="whatsapp-btn" style="background: linear-gradient(45deg, #007bff, #0056b3); margin-top: 1.5rem;">
+                        <i class="fab fa-whatsapp"></i> Sewa Tahunan
+                    </a>
+                </div>
+
+                <div class="service-card animate">
+                    <i class="fas fa-wrench service-icon"></i>
+                    <h3>Service 24/7</h3>
+                    <p><strong>Bergaransi</strong> - Tim teknisi certified. Sparepart original ready stock.</p>
+                    <a href="https://wa.me/6281232336726?text=Halo%20Admin%0A%0ASaya%20butuh%20SERVICE%20ALAT%20BERAT%0AUnit%20saya%20rusak%20Terima%20kasih!" 
+                       class="whatsapp-btn" style="background: linear-gradient(45deg, var(--danger), #c82333); margin-top: 1.5rem;">
+                        <i class="fab fa-whatsapp"></i> Pesan Service
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="animate">
+                    <h3>10+</h3>
+                    <p>Unit Alat Berat</p>
+                </div>
+                <div class="animate">
+                    <h3>500+</h3>
+                    <p>Orang Terlatih</p>
+                </div>
+                <div class="animate">
+                    <h3>15+</h3>
+                    <p>Tahun Pengalaman</p>
+                </div>
+                <div class="animate">
+                    <h3>98.7%</h3>
+                    <p>Kepuasan Pelanggan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- TESTIMONI OTOMATIS -->
+<section id="testimoni" style="background: var(--light);">
+    <div class="container">
+        <h2 class="section-title animate">
+            <i class="fas fa-comment-dots"></i> Ulasan Langsung Google Maps
+        </h2>
+        
+        <!-- Widget Container -->
+        <div class="animate" style="background: var(--white); padding: 20px; border-radius: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+            <!-- Link ke Google Maps untuk SEO & Trust -->
+            <div style="text-align: center; margin-bottom: 20px;">
+                <a href="https://maps.app.goo.gl/z4onBC8xZQw4dLB18" target="_blank" class="google-btn">
+<img src="data:image/png;base64,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" width="20" alt="Maps">
+
+                </a>
+            </div>
+
+            <!-- EMBED WIDGET OTOMATIS -->
+            <!-- Saya menggunakan library gratis dari Elfsight/CommonNinja yang sangat populer -->
+            <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+            <div class="elfsight-app-3494246f-f916-4f07-bb75-29809b41ca45" data-elfsight-app-lazy></div>
+            
+            <!-- Backup link jika widget gagal load -->
+            <p style="text-align: center; font-size: 0.8rem; color: #999; margin-top: 15px;">
+                Menampilkan ulasan terbaru dari pelanggan CV. Kresna Jaya Forklift
+            </p>
+        </div>
+    </div>
+</section>
+    <!-- CONTACT -->
+    <section id="kontak" class="contact-section">
+        <div class="container">
+            <h2 class="section-title animate">
+                <i class="fas fa-headset"></i> Kontak & WhatsApp
+            </h2>
+            <div class="contact-grid">
+                <div class="contact-info animate">
+                    <h3>📞 CV. KRESNA JAYA FORKLIFT</h3>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <a href="https://maps.app.goo.gl/DvHPd1LApXaZAxnd6" target="_blank">
+                            Perum puri Mojobaru Blok CU, Kedung Sumur, Canggu, Kec. Jetis, Kabupaten Mojokerto, Jawa Timur 61352
+                        </a> 
+                    </p>
+                    <p>
+                        <i class="fas fa-phone"></i>
+                        +62 812-3233-6726
+                    </p>
+                    <p>
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/6285746470834" target="_blank">
+                            +62 857-4647-0834
+                        </a>
+                    </p>
+                   <p>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <a href="https://tiktok.com/@kresnajayaforklif8" target="_blank">
+                            KJF TRAINING CENTER                        
+                        </a> 
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope"></i>
+                        cv.kresnajaya.forkliftt@gmail.com
+                    </p>
+                    <hr style="margin: 2rem 0; border: none; height: 2px; background: linear-gradient(90deg, transparent, var(--primary), transparent);">
+                    <p>
+                        <i class="fas fa-clock"></i>
+                        <strong>Jam Operasional:</strong><br>
+                        Senin-Jumat: 08.00-17.00 WIB<br>
+                        Sabtu: 08.00-14.00 WIB<br>
+                        Emergency 24/7
+                    </p>
+                </div>
+                
+                <form class="contact-form animate" id="contactForm">
+                    <div class="form-success" id="successMessage">
+                        <i class="fas fa-check-circle" style="font-size: 2rem; margin-right: 0.5rem;"></i>
+                        ✅ Pesan berhasil terkirim ke WhatsApp Admin!<br>
+                        Tim kami akan balas dalam <strong>5-10 menit</strong>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Nama Lengkap *</label>
+                        <input type="text" id="nama" placeholder="Masukkan nama lengkap Anda" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>No. WhatsApp *</label>
+                        <input type="tel" id="whatsapp" placeholder="Contoh: 6281232336726" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="email" placeholder="Opsional">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Layanan yang Diinginkan *</label>
+                        <select id="layanan" required>
+                            <option value="">Pilih layanan...</option>
+                            <option value="pelatihan-forklift-manual">🎓 Pelatihan Forklift Manual</option>
+                            <option value="pelatihan-forklift-matic">🎓 Pelatihan Forklift Matic</option>
+                            <option value="pelatihan-reach-truck">🎓 Pelatihan Reach Truck</option>
+                            <option value="pelatihan-excavator">🎓 Pelatihan Excavator</option>
+                            <option value="sewa-harian">🚜 Sewa Harian</option>
+                            <option value="sewa-mingguan">🚜 Sewa Mingguan</option>
+                            <option value="sewa-tahunan">🚜 Sewa Tahunan</option>
+                            <option value="service">🔧 Service & Maintenance</option>
+                            <option value="lainnya">❓ Lainnya...</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Pesan Tambahan</label>
+                        <textarea id="pesan" rows="4" placeholder="Detail kebutuhan, jadwal, lokasi proyek, dll..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        🚀 Kirim Pesan WhatsApp Otomatis
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <p style="font-size: 1.1rem; opacity: 0.9;">
+                © 2026 <strong>CV. KRESNA JAYA FORKLIFT</strong>. 
+                All Rights Reserved | 
+                <i class="fas fa-truck-monster"></i> Partner Terpercaya Alat Berat Indonesia
+            </p>
+            <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.7;">
+                Sertifikasi Kemnaker RI | Licensed & Insured | 15+ Years Experience
+            </p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // === NOMOR WA PERUSAHAAN - UBAH DI SINI ===
+        const NOMOR_WA = '6281232336726'; // Ganti dengan nomor WA Anda (tanpa + atau 0 di depan)
+
+        // Mobile Menu
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+
+        // === WHATSAPP FORM AUTO MESSAGE ===
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const nama = document.getElementById('nama').value.trim();
+            const whatsapp = document.getElementById('whatsapp').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const layanan = document.getElementById('layanan').value;
+            const pesan = document.getElementById('pesan').value.trim();
+            
+            // Validate
+            if (!nama || !whatsapp || !layanan) {
+                alert('Mohon lengkapi field yang wajib diisi (*)');
+                return;
+            }
+
+            // Layanan mapping
+            const layananMap = {
+                'pelatihan-forklift-manual': 'Pelatihan Forklift Manual',
+                'pelatihan-forklift-matic': 'Pelatihan Forklift Matic',
+                'pelatihan-reach-truck': 'Pelatihan Reach Truck',
+                'pelatihan-excavator': 'Pelatihan Excavator',
+                'sewa-harian': 'Sewa Harian',
+                'sewa-mingguan': 'Sewa Mingguan',
+                'sewa-tahunan': 'Sewa Tahunan',
+                'service': 'Service & Maintenance',
+                'lainnya': 'Lainnya'
+            };
+
+            // WhatsApp Message Template
+            let message = ` *PESAN BARU - KRESNA JAYA FORKLIFT*\n\n`;
+            message += ` *Nama:* ${nama}\n`;
+            message += ` *WhatsApp:* wa.me/62${whatsapp}\n`;
+            message += ` *Email:* ${email || 'Tidak diisi'}\n\n`;
+            message += ` *Layanan:* ${layananMap[layanan] || layanan}\n\n`;
+            message += ` *Detail:* ${pesan || 'Tidak ada keterangan tambahan'}\n\n`;
+            message += ` *Waktu:* ${new Date().toLocaleString('id-ID', { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            })}\n`;
+            message += ` *Sumber:* Website Resmi\n\n`;
+            message += `========== *URGENT FOLLOW UP* ==========\n`;
+
+            // Encode & Open WhatsApp
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappURL = `https://wa.me/${NOMOR_WA}?text=${encodedMessage}`;
+            
+            // Open WhatsApp
+            window.open(whatsappURL, '_blank');
+            
+            // Show success
+            const successMsg = document.getElementById('successMessage');
+            successMsg.style.display = 'block';
+            successMsg.scrollIntoView({ behavior: 'smooth' });
+            
+            // Reset form after 5s
+            setTimeout(() => {
+                this.reset();
+                successMsg.style.display = 'none';
+            }, 6000);
+        });
+
+        // Auto format WhatsApp number
+        document.getElementById('whatsapp').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 1 && value.startsWith('0')) {
+                value = '62' + value.slice(1);
+            }
+            e.target.value = value;
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(30,60,114,0.95)';
+            } else {
+                header.style.background = 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)';
+            }
+        });
+
+        console.log('🚀 Kresna Jaya Forklift Website Loaded Successfully!');
+        console.log('📱 WhatsApp Number:', NOMOR_WA);
+    </script>
+</body>
+</html>
+
